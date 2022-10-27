@@ -1,0 +1,777 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "doit build",
+            "type": "shell",
+            "command": "doit build -t run_unittest__all",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "doit unittests",
+            "type": "shell",
+            "command": "doit cmake variant=Unittest -t Debug --coverage --unittest-include-dir=ic-functions/repo",
+            "isBackground": false,
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_systemp_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_systemp_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_gear_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_gear_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_userlamps_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_userlamps_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_wbk_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_wbk_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_odometer_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_odometer_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_longitudinal_guidance_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_longitudinal_guidance_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_assistmode_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_assistmode_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_parking_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_parking_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_revolutioncounter_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_revolutioncounter_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_range_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_range_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_sound_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_sound_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_readylamp_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_readylamp_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_flapstate_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_flapstate_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_lateral_guidance_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_lateral_guidance_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_speed_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_speed_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_emergencystop_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_emergencystop_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_seatbelt_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_seatbelt_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_telltales_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_telltales_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_powermeter_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_powermeter_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_ccm_test_cclamps",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_ccm_test_cclamps",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_ccm_test_ccprocess",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_ccm_test_ccprocess",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_ccm_test_ccshortmessages",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_ccm_test_ccshortmessages",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_ccm_test_ccacoustic",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_ccm_test_ccacoustic",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_atemp_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_atemp_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_tank_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_tank_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_foresight_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_foresight_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest global_functions_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_global_functions_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest _all",
+            "type": "shell",
+            "command": "doit build -t run_unittest__all",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest/"
+                ],
+                "base": "$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit cmake ic-functions",
+            "type": "shell",
+            "command": "doit cmake variant=Unittest -t Debug --coverage --unittest-include-dir=ic-functions/repo",
+            "isBackground": false,
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "doit unittest icfunctions_efficiencytrainer_test",
+            "type": "shell",
+            "command": "doit build -t run_unittest_icfunctions_efficiencytrainer_test",
+            "isBackground": false,
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/bin/cmake-Unittest-ninja"
+                ],
+                "base": "\\$gcc",
+                "owner": "cpp",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        }
+    ]
+}
