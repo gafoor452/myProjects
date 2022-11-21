@@ -6,6 +6,5 @@ int main(){
     int *ptr = &var;
     cout<< var <<'\t' <<ref <<'\t' << ptr << endl;
     cout<< &var <<'\t' <<&ref <<'\t' << ptr <<'\t' << &ptr << endl;
-    delete[] ptr;
     return 0;
 }

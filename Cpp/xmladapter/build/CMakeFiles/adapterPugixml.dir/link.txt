@@ -1,0 +1,1 @@
+/usr/bin/clang++-12 -g -rdynamic CMakeFiles/adapterPugixml.dir/pugixml_src/pugixml.cpp.o CMakeFiles/adapterPugixml.dir/src/main.cpp.o -o adapterPugixml 

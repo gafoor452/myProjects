@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/gafoor/myWork/myProjects/Cpp/xmladapter/build",
+  "command": "/usr/bin/clang++-12   -g -o CMakeFiles/adapterPugixml.dir/pugixml_src/pugixml.cpp.o -c /home/gafoor/myWork/myProjects/Cpp/xmladapter/pugixml_src/pugixml.cpp",
+  "file": "/home/gafoor/myWork/myProjects/Cpp/xmladapter/pugixml_src/pugixml.cpp"
+},
+{
+  "directory": "/home/gafoor/myWork/myProjects/Cpp/xmladapter/build",
+  "command": "/usr/bin/clang++-12   -g -o CMakeFiles/adapterPugixml.dir/src/main.cpp.o -c /home/gafoor/myWork/myProjects/Cpp/xmladapter/src/main.cpp",
+  "file": "/home/gafoor/myWork/myProjects/Cpp/xmladapter/src/main.cpp"
+}
+]
