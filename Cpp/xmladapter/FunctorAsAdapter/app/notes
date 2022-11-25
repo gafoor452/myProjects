@@ -1,0 +1,4 @@
+Inputs
+1. Read the data from the function via ...... 
+2. If it is not human readable, the nd reintreprestcast and send the data
+3. dont send float values directly convert into int and send the data

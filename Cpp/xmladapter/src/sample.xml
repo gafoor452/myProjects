@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <function name="Speed">
-  <digitalspeed1>58</digitalspeed1>
-  <digitalspeed2>58.5</digitalspeed2>
+  <signal1 type="int">5238</signal1>
+  <signal2 type="float">6765765765654545465456</signal2> <!--58.5-->
 </function>

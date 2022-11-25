@@ -1,0 +1,29 @@
+
+//#include "persistant.hpp"
+#include <iostream>
+#include <string.h>
+#include <type_traits>
+
+struct functions {
+  int signal1;
+  float signal2;
+};
+
+template<typename FuncType, typename T>
+void printmembers(FuncType& fun, T FuncType::*member){
+  std::cout << fun.*member <<" ";
+}
+
+template <typename FuncType, typename T,typename... Members>
+  void printmembers(const FuncType &fun, T FuncType::*member, Members... mem ) {
+      printmembers(fun.*member,mem...);
+  }
+
+
+int main(void) {
+  functions Speed{123, 45.7};
+  
+  printmembers(Speed, &functions::signal1);
+  //printmembers(Speed, &functions::signal1,&functions::signal2);
+  return 0;
+}
