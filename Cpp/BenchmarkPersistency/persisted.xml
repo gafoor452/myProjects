@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Speed>
+	<FirstSpeed>
+		<AnalogSpeed>50.543201</AnalogSpeed>
+		<DigitalSpeed>50</DigitalSpeed>
+	</FirstSpeed>
+	<SecondSpeed>
+		<AnalogSpeed>27.500000</AnalogSpeed>
+		<DigitalSpeed>27</DigitalSpeed>
+	</SecondSpeed>
+</Speed>

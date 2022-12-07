@@ -1,0 +1,11 @@
+load("//third_party:get_tooling.bzl", "get_tooling")
+
+get_tooling()
+
+load("//third_party:init_tooling.bzl", "initialize_tooling")
+
+initialize_tooling()
+
+load("//third_party:external_libs.bzl", "initialize_third_party_libs")
+
+initialize_third_party_libs()

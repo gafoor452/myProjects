@@ -1,0 +1,20 @@
+cc_binary(
+    name = "app",
+    srcs = [
+        "BinaryPayload.cpp",
+        "BinaryPayload.hpp",
+        "BinaryPersistency.hpp",
+        "Persistency.hpp",
+        "Serializer.hpp",
+        "SomeDataBinarySerializer.cpp",
+        "SomeDataBinarySerializer.hpp",
+        "SomeDataOutput.hpp",
+        "SomeDataWithVectorOutput.hpp",
+        "SomeDataWithVectorSerializer.cpp",
+        "SomeDataWithVectorSerializer.hpp",
+        "SomeDataXmlSerializer.hpp",
+        "XmlPersistency.hpp",
+        "main.cpp",
+    ],
+    deps = ["//third_party/pugixml"],
+)

@@ -3,8 +3,8 @@
 
 int main(){
     SpeedProcessOutpuData speed_out_data{
-        {{123.0f,66.34f,SpeedUnit::kmh},{SpeedUnit::kmh, 86u, 79u, SpeedUnit::mph},true},
-        {8,6,123,456723,{67.78,SpeedUnit::kmh}}};
+        {{123.0f,66.341234f,SpeedUnit::kmh},{SpeedUnit::kmh, 86u, 79u, SpeedUnit::mph},true},
+        {8,6,123,456723,{67.783987,SpeedUnit::kmh}}};
     
     PersistanceData<SpeedProcessOutpuData> persistancedata(&speed_out_data);
 

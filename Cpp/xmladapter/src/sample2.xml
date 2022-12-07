@@ -3,3 +3,18 @@
   <signal1 type="int">58</signal1>
   <signal2 type="float">58.5</signal2>
 </function>
+
+<!--  -->
+<?xml version = "1.0"?>
+<Company>
+   <Employee category = "Technical">
+      <FirstName>Tanmay</FirstName>
+      <LastName>Patil</LastName>
+      <ContactNo>1234567890</ContactNo>
+   </Employee>
+   <Employee category = "Non-Technical">
+      <FirstName>Taniya</FirstName>
+      <LastName>Mishra</LastName>
+      <ContactNo>1234667898</ContactNo>
+   </Employee>
+</Company>
