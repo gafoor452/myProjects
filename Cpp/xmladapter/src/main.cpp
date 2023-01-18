@@ -39,12 +39,12 @@ public:
 
 #if 1
   FuncType *GetDataByLocation(const char *file_location) {
-    // FuncType fun_var_;
+    FuncType fun_var_;
     result = doc.load_file(file_location);
     pugi::xml_node node = doc.child("function");
     for (pugi::xml_node child : node.children()) {
-      // std::cout << child.name() << " " << child.child_value() << std::endl;
-      // fun_var_.signal1 = child.child_value();
+      std::cout << child.name() << " " << child.child_value() << std::endl;
+      fun_var_.signal1 = child.child_value();
     }
     return &fun_var_;
   }
@@ -71,12 +71,12 @@ struct function {
 int main(void) {
   function Speed{123, 45.7};
   persistantdata<function> pd;
-  pd.WriteDataByLocation(
-      "/home/gafoor/myWork/myProjects/Cpp/xmladapter/src/sample3.xml", &Speed);
-  //   memcpy(&Speed,
-  //          pd.GetDataByLocation(
-  //              "/home/gafoor/myWork/myProjects/Cpp/xmladapter/src/sample.xml"),
-  //          sizeof(function));
+  // pd.WriteDataByLocation(
+      // "/home/gafoor/myWork/myProjects/Cpp/xmladapter/src/sample3.xml", &Speed);
+    memcpy(&Speed,
+           pd.GetDataByLocation(
+               "/home/gafoor/myWork/myProjects/Cpp/xmladapter/src/sample.xml"),
+           sizeof(function));
 
   return 0;
 }

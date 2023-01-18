@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<FunctionData>
+	<Speeds>
+		<Speed>
+			<Digital>10</Digital>
+			<Analog>AAAoQQAA</Analog>
+			<!--Analog = 10.5-->
+		</Speed>
+		<Speed>
+			<Digital>20</Digital>
+			<Analog>MzOjQQAA</Analog>
+			<!--Analog = 20.4-->
+		</Speed>
+		<Speed>
+			<Digital>30</Digital>
+			<Analog>ZmbyQQAA</Analog>
+			<!--Analog = 30.3-->
+		</Speed>
+		<Speed>
+			<Digital>40</Digital>
+			<Analog>zcwgQgAA</Analog>
+			<!--Analog = 40.2-->
+		</Speed>
+	</Speeds>
+	<Sum>GXhKQQAA</Sum>
+	<!--Sum = 12.6543-->
+</FunctionData>

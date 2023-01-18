@@ -4,6 +4,6 @@ cc_binary(
         "main.cpp",
         "EUsocket.hpp",
         "Adapter.hpp",
-        "IndianSocket.hpp",
+        "IndianPlug.hpp",
     ],
 )

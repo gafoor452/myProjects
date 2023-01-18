@@ -2,20 +2,20 @@
 #define ADAPTER_HPP
 
 #include "EUsocket.hpp"
-#include "IndianSocket.hpp"
+#include "IndianPlug.hpp"
 
 class SocketAdapter : public EUSocket{
     public:
-    SocketAdapter(IndianSocket* soc){
-        isoc_ = soc;
+    SocketAdapter(IndianPlug* soc) : isoc_{soc}{
     }
 
     void socket_connect() const override{
-        std::cout << "Socker Adapter is connected \n";
+        isoc_->PlugConnect();
+        std::cout << "Socker Adapter \n";
     }
 
     private:
-    IndianSocket* isoc_;
+    IndianPlug* isoc_;
 };
 
 #endif

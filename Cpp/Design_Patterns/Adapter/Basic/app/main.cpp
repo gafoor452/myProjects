@@ -12,7 +12,7 @@ int main(){
     EUSocket *euSocket = new EUSocket;
     charging(euSocket);
 
-    SocketAdapter *sAd = new SocketAdapter(new IndianSocket);
+    SocketAdapter *sAd = new SocketAdapter(new IndianPlug);
     charging(sAd);
 
     delete euSocket;

@@ -11,7 +11,7 @@ class EUSocket{
     EUSocket(){
         std::cout<<"EU Socket object is created\n";
     }
-    ~EUSocket() = default;
+    virtual ~EUSocket() = default;
 };
 
 #endif
