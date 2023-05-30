@@ -5,3 +5,10 @@ on:
   pull_request:
     branches: [ main ]
      
+jobs:
+  bash-example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Group of log lines
+        run: |
+            echo "gafoor"
