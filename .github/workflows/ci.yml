@@ -1,1 +1,18 @@
 # This is the workflow to learn Github actions
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  steps:
+
+  - uses: actions/checkout@v2
+    
+    run: |
+      echo "Workflow name:  $GITHUB_WORKFLOW"
+      echo "Workspace:      $GITHUB_WORKSPACE"
+      echo "Event:          $GITHUB_EVENT_NAME"
+      echo "SHA:            $GITHUB_SHA"
+      echo "Ref:            $GITHUB_REF"
